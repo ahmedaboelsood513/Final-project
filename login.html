@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:200,400%7CLato:300,400,300italic,700%7CMontserrat:900">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+</head>
+<body>
+   
+        <header class="section-page-header">
+          <!-- RD Navbar-->
+          <div class="rd-navbar-wrap rd-navbar-corporate">
+            <nav class="rd-navbar" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fullwidth" data-xl-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-device-layout="rd-navbar-static" data-md-stick-up-offset="130px" data-lg-stick-up-offset="100px" data-stick-up="true" data-sm-stick-up="true" data-md-stick-up="true" data-lg-stick-up="true" data-xl-stick-up="true">
+              <div class="rd-navbar-inner">
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <!-- RD Navbar Toggle-->
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <!-- RD Navbar Brand-->
+                  <div class="rd-navbar-brand"><a class="brand-name" href="index.html"><img class="logo-default" src="images/logo-default-208x46.png" alt=""/><img class="logo-inverse" src="images/logo-inverse-208x46.png" alt=""/> Void travel</a></div>
+                </div>
+                <div class="rd-navbar-aside-center">
+                  <div class="rd-navbar-nav-wrap">
+                    <!-- RD Navbar Nav-->
+                    <ul class="rd-navbar-nav">
+                     
+                     
+                     
+                      
+                      <li class="active"><a href="index.html">Home</a>
+                      </li>
+                      <li><a href="about-us.html">About Us</a>
+                      </li>
+                      <li><a href="contacts.html">Contacts</a>
+                      </li>
+                      <li><a href="typography.html">Typography</a>
+                      </li>
+                      
+          
+                    </ul>
+                  </div>
+                
+                </div>
+                <div class="center" >
+                  <span class="material-icons-outlined"><svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 -960 960 960" width="40px" fill="blak"><path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"/></svg></span>
+                  <a  class="login" href="">login</a>
+                </div>
+                <div class="rd-navbar-aside-right"><a class="button button-sm button-secondary button-nina" href="#">Book a tour now</a></div>
+          
+              </div>
+            </nav>
+          </div>
+        </header>
+<div class="form-container">
+    <div class="form-col">
+        <div class="btn-box">
+            <button class="btn btn-1" id="login">Sign In</button>
+            <button class="btn btn-1" id="register">Sign Up</button>
+        </div>
+        <!-- log in form container -->
+         <form action="" class="form-box login-form">
+            <div class="form-title">
+                <span>Sign In</span>
+            </div>
+            <div class="form-inputs">
+                <div class="input-box">
+                    <input type="text" class="inputs input-field" placeholder="username" required>
+                    <ion-icon name="person-outline" class="icon"></ion-icon>
+                </div>
+                <div class="input-box">
+                    <input type="password" oninput="changeIcon(this.value)" id="myLogPassword" class="inputs input-field" placeholder="password" required>
+                    <ion-icon name="lock-closed-outline" class="icon" id="log-pass-icon" onclick="myLogPassword"></ion-icon>
+                </div>
+                <div class="forgot-pass">
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <div class="inpt-box">
+                    <button class="inputs submit-btn">
+                        <span>Sign In</span>
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </button>
+                </div>
+
+            </div>
+            <div class="social-login">
+                <div class="social-login-box">
+                    <ion-icon name="logo-google" class="social-login-icon"></ion-icon>
+                </div>
+                <div class="social-login-box">
+                    <ion-icon name="logo-facebook" class="social-login-icon"></ion-icon>
+                </div>
+                <div class="social-login-box">
+                    <ion-icon name="logo-twitter" class="social-login-icon"></ion-icon>
+                </div>
+                <div class="social-login-box">
+                    <ion-icon name="logo-github" class="social-login-icon"></ion-icon>
+                </div>
+            </div>
+         </form>
+         <form action="" class="form-box register-form">
+          <div class="form-title">
+              <span>Sign Up</span>
+          </div>
+          <div class="form-inputs">
+              <div class="input-box">
+                  <input type="text" class="inputs input-field" placeholder="Email" required>
+                  <ion-icon name="mail-outline" class="icon"></ion-icon>
+              </div>
+              <div class="input-box">
+                <input type="text" class="inputs input-field" placeholder="Username" required>
+                <ion-icon name="person-outline" class="icon"></ion-icon>
+            </div>
+              <div class="input-box">
+                  <input type="password" oninput="changeIcon(this.value)" id="regpassword" class="inputs input-field" placeholder="password" required>
+                  <ion-icon name="lock-closed-outline" class="icon" id="reg-pass-icon" onclick="myRegPassword()"></ion-icon>
+              </div>
+              <div class="remember-me">
+              <input type="checkbox" id="remember-me-check">
+              <label for="remember-me-check">Remember me</label>
+              </div>
+              <div class="inpt-box">
+                  <button class="inputs submit-btn">
+                      <span>Sign uP</span>
+                      <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </button>
+              </div>
+
+          </div>
+          <div class="social-login">
+              <div class="social-login-box">
+                  <ion-icon name="logo-google" class="social-login-icon"></ion-icon>
+              </div>
+              <div class="social-login-box">
+                  <ion-icon name="logo-facebook" class="social-login-icon"></ion-icon>
+              </div>
+              <div class="social-login-box">
+                  <ion-icon name="logo-twitter" class="social-login-icon"></ion-icon>
+              </div>
+              <div class="social-login-box">
+                  <ion-icon name="logo-github" class="social-login-icon"></ion-icon>
+              </div>
+          </div>
+       </form>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
